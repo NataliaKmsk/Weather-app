@@ -11,7 +11,7 @@ const humidity = document.querySelector('span.humidity');
 const windSpeed = document.querySelector('span.wind_speed');
 const visibility = document.querySelector('span.visibility');
 const clouds = document.querySelector('span.clouds');
-const pollutionImg = document.querySelector('span.img_pollution');
+const pollutionImg = document.querySelector('img.img_pollution');
 const pollutionValue = document.querySelector('p.value');
 
 const APIinfo = {
