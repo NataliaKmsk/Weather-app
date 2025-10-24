@@ -43,7 +43,7 @@ function getWeather (){
         errorMsg.textContent = ' ';
 
         //odpytac drugie api i wyświetlić dane o zanieczyszczeniu powietrza
-        apiURLpollution = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${response.data.coord.lat}&lon=${response.data.coord.lon}${APIinfo.key}`;
+        apiURLpollution = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${response.data.coord.lat}&lon=${response.data.coord.lon}${APIinfo.key}`;
 
         axios.get(apiURLpollution).then((res) => {
             const pollutionValueNum = res.data.list[0].components.pm2_5
