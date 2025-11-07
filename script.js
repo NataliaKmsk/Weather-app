@@ -33,6 +33,7 @@ function getWeather (){
         weatherImg.src = `https://openweathermap.org/img/wn/${dat.weather[0].icon}@2x.png`
         temp.textContent = `${Math.round(dat.main.temp)}°C`;
         weatherDesc.textContent = `${dat.weather[0].description}`;
+        weatherDesc.classList.add('description_red');
         feelsLike.textContent = `${Math.round(dat.main.feels_like)}°C`;
         pressure.textContent = `${dat.main.pressure}hPa`;
         humidity.textContent = `${dat.main.humidity}%`;
@@ -79,6 +80,7 @@ function getWeather (){
 
         weatherImg.src = '';
         pollutionImg.style.backgroundColor = 'transparent';
+         weatherDesc.classList.remove('description_red');
 
     }).finally(() => {
         input.value = '';
