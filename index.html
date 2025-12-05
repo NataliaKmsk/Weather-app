@@ -16,7 +16,7 @@
     <main>
         <section class="weather">
             <section class="search">
-                <input type="text" placeholder="podaj nazwę miasta">
+                <input id="name-city" type="text" placeholder="podaj nazwę miasta">
                 <button class="click">Sprawdź pogodę!</button>
                 <p class="error_msg"></p>
             </section>
@@ -29,7 +29,7 @@
                     </div>
                     <p class="weather_description"></p>
                 </div>
-                <div class="">
+                <div class="parameters">
                     <p>Temperatura odczuwalna: <span class="feels_like"></span></p>
                     <p>Ciśnienie: <span class="pressure"></span></p>
                     <p>Wilgotność: <span class="humidity"></span></p>
@@ -40,7 +40,7 @@
             </section>
         </section>
         <section class="pollution">
-            <h3>Zanieczyszcenie powietrza</h3>
+            <h3 class="airpol">Zanieczyszczenie powietrza</h3>
             <div>
                 <img src="./img/pm.png" alt="" class="img_pollution">
                 <p class="value"></p>

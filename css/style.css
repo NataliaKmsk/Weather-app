@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-style: sans-serif;
   font-family: Roboto Mono;
+  text-align: center;
 }
 
 header {
@@ -14,20 +15,47 @@ header {
   align-items: center;
   width: 100%;
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: #f7a671;
   color: col;
   text-align: center;
 }
-
+.search {
+  margin: 30px;
+}
+#name-city {
+  padding: 5px;
+}
 .click {
-  background-color: #dacbc6;
-  border-color: #ecb9ab;
-  border-radius: 10%;
+  padding: 5px;
+  font-weight: 700;
+  background-color: #eb8361;
+  border: 1px solid rgb(49, 35, 35);
+}
+.click:hover {
+  cursor: pointer;
 }
 
+.img_pollution {
+  border-radius: 100%;
+}
 .description_red {
   background-color: #eb6e4c;
-  padding: 10px 15px;
-  border-radius: 10px;
+  color:aliceblue;
+  margin: 10px 30px;
+  padding: 15px;
   text-align: center;
+  display: center;
 }/*# sourceMappingURL=style.css.map */
+.parameters {
+  margin: 10px;
+  padding: 10px;
+}
+.airpol {
+  margin: 10px 30px;
+  padding: 15px;
+  background-color: #7c7370;
+  color: aliceblue;
+}
+footer{
+  text-align: left;
+}
